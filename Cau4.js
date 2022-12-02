@@ -30,22 +30,21 @@ function setFullname(value, a){
 }
 function getFullname(a){
   return a.fullname;
-  console.log(a.fullname);
 }
 function setEmail(valueEmail, a){
   a.email = valueEmail;
 }
 function getEmail(a){
   return a.email;
-  console.log(a.email);
 }
 function toString(){
-  console.log (Staff.toString());
+  return this.fullname;
+
 }
 let Staffs=[
     Staff,
-    new staff("Nguyễn văn A","nguyenvana@gmail.com")
-    new staff("Nguyễn văn B","nguyenvanb@gmail.,com")
+    new Staff("Nguyễn văn A","nguyenvana@gmail.com"),
+    new Staff("Nguyễn văn B","nguyenvanb@gmail.,com")
 ]
 setFullname("David Do", Staff);
 getFullname(Staff);
